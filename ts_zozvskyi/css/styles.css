@@ -1,0 +1,39 @@
+body{
+font-family: 'Montserrat', sans-serif;
+background-color: LightSlateGrey;  
+display:flex-start;
+}
+.main {
+	text-align: center; 
+	margin: auto;
+    font-size: 18px;
+    padding: 0px 10px;
+    max-width: 1000px;
+	 background-color:#fff;
+	 height: 100%;
+	 border-radius:30px;
+}
+
+
+form, table{
+	 margin-left: auto;
+    margin-right: auto;
+	margin-bottom: auto;
+}
+
+
+.svit{
+	padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+	opacity: 0.9;
+	background-color: DarkSlateGray;
+	color: LightCyan;
+}
+ 
+ 
+ .searchb{
+	 width: 20;
+ }

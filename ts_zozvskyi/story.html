@@ -1,0 +1,102 @@
+<html>
+<head>
+<meta charset="utf-8"> 
+<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="./css/menu.css">
+<script src="./js/menu.js"></script>
+<title>
+VetAI Diagnostics (Історя аналізів)
+</title>
+</head>
+<body>
+<!--Бокове меню-->
+<div class="open"><span  onclick="openMenu()">☰ Меню</span></div>
+<div id="MyMenu" class="menu">
+<a href="javascript:void(0)" class="close" onclick="closeMenu()"><div class="closeblock">☰ Закрити</div></a>
+	<ul>
+ <a href="index.html"><li><img class="logo"  src="./images/vetai-ico-dc.ico"></li></a>
+  <li><select class= "lang" >
+	<option value="ua">Українська</option>
+	<option value="eng">English</option>
+	<option value="de">Deutsch</option>
+	<option value="pl">Polski</option>
+	</select></li>
+	<hr>
+  <li><div id="userdata" class="user"><img class="pic" src="./images/t4.jpg"> <!--Тут має бути фото користувача. Наразі фото умовне-->
+  Зоозовський Ярослав Євгенович  <!--Тут має бути Ім'я користувача-->
+  </div>
+  </li>
+  <hr>
+  <li><button class="exit">Вихід</button></li>
+  <hr>
+<li>
+<h2>Меню навігації </h2>
+</li>
+<a href="index.html"><div class="home">Головне меню</div></a>
+<li>
+<div class="dropdown">
+  <button class="mainmenubtn">Основні сторінки</button>
+  <div class="dropdown-child">
+    <a href="index.html">Головне меню</a>
+	<a href="avto.html">Авторизація</a>
+	<a href="neiro.html">Аналіз рентгенівських снімків</a>
+	<a href="story.html">Історія аналізів</a>
+  </div>
+  </div>
+  </li>
+  <li>
+<div class="dropdown">
+  <button class="mainmenubtn">Перелік аналізів</button>
+  <div class="dropdown-child">
+    <a href="">Аналіз крові</a>
+	<a href="">Бактеріологічне дослідження</a>
+	<a href="">Гормон Т4</a>
+	<a href="">Зіскоб на наявність ектопаразитів</a>
+	<a href="">Посів на дерматофіти</a>
+	<a href="">Прогестерон</a>
+	<a href="">Спермограма</a>
+  </div>
+  </div>
+  </li>
+  </ul>
+</div>
+<!--Головна частина-->
+<div class="main">
+<h1>Історя аналізів</h1>
+<form>
+<table>
+<tr>
+<td><select class= "sel-sort" >
+	<option value="st">Сортувати за</option>
+	<option value="date">за датою</option>
+	<option value="type">за типом аналізу</option>
+	<option value="type">за результатом</option>
+	</select></td>
+<td><select class= "sort" >
+	<option value="up">за зростанням</option>
+	<option value="down">за убуванням</option>
+	</select>
+</td>
+<td>
+<input type="text" placeholder="Пошук" class="search"> <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" alt="search icon" class="searchb">
+</td>
+</tr>
+</table> 
+
+<table border=1 width="1000">
+<th>Назва аналізу</th><th>Дата аналізу</th><th>Тип аналізу</th><th>Результат</th><th>Переглянути деталі</th>
+<tr>
+<td>Тестовий аналіз</td><td>22/11/2000</td><td>Тестовий аналіз 3</td><td>Тестовий аналіз 4</td><td><br> <button type="submit" class="detail">Деталі</button></td>
+</tr>
+<tr>
+<td>Тестовий аналіз</td><td>22/11/2000</td><td>Тестовий аналіз 3</td><td>Тестовий аналіз 4</td><td><br> <button type="submit" class="detail">Деталі</button></td>
+</tr>
+<tr>
+<td>Тестовий аналіз</td><td>22/11/2000</td><td>Тестовий аналіз 3</td><td>Тестовий аналіз 4</td><td><br> <button type="submit" class="detail">Деталі</button></td>
+</tr>
+</table>
+<button type="submit" class="svit">Завантажити звіт</button>
+</form>
+</div>
+</body>
+</html> 

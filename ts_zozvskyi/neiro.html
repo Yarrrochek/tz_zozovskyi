@@ -1,0 +1,86 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./css/neiro.css">
+<link rel="stylesheet" href="./css/menu.css">
+<script src="./js/menu.js"></script>
+<title>Сторінка з НМ</title>
+</head>
+<body> 
+<!--Бокове меню-->
+<div class="open"><span  onclick="openMenu()">☰ Меню</span></div>
+<div id="MyMenu" class="menu">
+<a href="javascript:void(0)" class="close" onclick="closeMenu()"><div class="closeblock">☰ Закрити</div></a>
+	<ul>
+ <a href="index.html"><li><img class="logo"  src="./images/vetai-ico-dc.ico"></li></a>
+  <li><select class= "lang" >
+	<option value="ua">Українська</option>
+	<option value="eng">English</option>
+	<option value="de">Deutsch</option>
+	<option value="pl">Polski</option>
+	</select></li>
+	<hr>
+  <li><div id="userdata" class="user"><img class="pic" src="./images/t4.jpg"> <!--Тут має бути фото користувача. Наразі фото умовне-->
+  Зоозовський Ярослав Євгенович  <!--Тут має бути Ім'я користувача-->
+  </div>
+  </li>
+  <hr>
+  <li><button class="exit">Вихід</button></li>
+  <hr>
+<li>
+<h2>Меню навігації </h2>
+</li>
+<a href="index.html"><div class="home">Головне меню</div></a>
+<li>
+<div class="dropdown">
+  <button class="mainmenubtn">Основні сторінки</button>
+  <div class="dropdown-child">
+    <a href="index.html">Головне меню</a>
+	<a href="avto.html">Авторизація</a>
+	<a href="neiro.html">Аналіз рентгенівських снімків</a>
+	<a href="story.html">Історія аналізів</a>
+  </div>
+  </div>
+  </li>
+  <li>
+<div class="dropdown">
+  <button class="mainmenubtn">Перелік аналізів</button>
+  <div class="dropdown-child">
+    <a href="">Аналіз крові</a>
+	<a href="">Бактеріологічне дослідження</a>
+	<a href="">Гормон Т4</a>
+	<a href="">Зіскоб на наявність ектопаразитів</a>
+	<a href="">Посів на дерматофіти</a>
+	<a href="">Прогестерон</a>
+	<a href="">Спермограма</a>
+  </div>
+  </div>
+  </li>
+  </ul>
+</div>
+<!--Головна частина-->  
+<div class="main">
+ <form method="post" enctype="multipart/form-data">
+ <h1>Назва аналізу</h1>
+<h2>Додаткова інформація<h2> 
+
+<hr>Дата<br><input type="date" name="analisdate">
+<hr>Порода<br><input type="text" name="breed">
+<hr>Вік<br><input type="text" name="age">
+<hr>Стать<br><input type="text" name="sex">
+
+<hr><div>
+    <label for="file">Choose file to upload</label>
+    <input type="file" id="file" name="file" multiple />
+  </div>
+
+  <div class = "send">
+<button type="submit" class="btn btn-lg btn-primary btn-block">Надіслати на аналіз</button>
+</div>
+</form>
+<div class="instruct">
+
+</div>
+</div>
+</body>
+</html>

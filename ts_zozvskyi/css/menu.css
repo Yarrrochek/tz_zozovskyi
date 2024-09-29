@@ -1,0 +1,128 @@
+
+
+.menu{
+	background-color: DarkSlateGray;
+	text-align: left;
+	height: 100%;
+    width: 0px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+	transition: 0.5s;
+	color: LightCyan;
+	border: solid;
+}
+
+.menu li {
+  list-style-type: none;
+  /* Прибираєм маркування */
+  margin: auto;
+}
+
+.menu ul {
+  margin-left: 0;
+  /* Відступ ліворуч в браузері IE и Opera */
+  padding-left: 0;
+  /* Відступ ліворуч в браузері Firefox, Safari, Chrome */
+}
+
+.exit, select{
+	min-width: 250px;
+	cursor: pointer;
+}
+
+.menu .mainmenubtn {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+	min-width: 250px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+.dropdown-child {
+    display: none;
+    background-color: DarkSlateGray;
+    min-width: 225px;
+	position: absolute;
+	z-index: 2;
+	
+
+}
+
+.menu .pic{
+    width: 30%;
+	float: left;
+	margin: 3px;
+}
+
+
+.dropdown-child a {
+    color: LightCyan;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+.menu .logo{
+	 width: 80px;
+}
+
+
+.close{
+	color: LightCyan;
+}
+
+.open{
+	position: absolute;
+}
+
+ .open, .close{
+	 font-size:30px;
+	 cursor:pointer;
+	 font-family: sans-serif;
+	text-decoration: none;
+	
+ }
+ 
+ .closeblock{
+	 margin: auto;
+ }
+ 
+ 
+ .menu hr{
+	 margin: 15px 0px 15px 0px;
+	 border-top: 1px solid LightCyan;
+ }
+ 
+ .menu h2{
+	 text-align: center;
+ }
+ 
+ .menu a{
+	 color: LightCyan;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+	border: 1px solid LightCyan;
+	text-align: center;
+ }
+ 
+ .menu .exit{
+	 background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+	min-width: 250px;
+	
+ }
